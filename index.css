@@ -1,0 +1,195 @@
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Parisienne', cursive;
+font-family: 'Philosopher', sans-serif;
+*/
+body{
+    scroll-behavior: smooth;
+}
+.hide{
+    display: none;
+}
+.fullHeight{
+    min-height: 100vh;
+    padding: 100px 30px;
+}
+.wrapper{
+    /* border: 1px solid #EEA05C; */
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.myBody{
+    width: 100%;
+    background: #0B0014;
+    /* border: 1px solid sienna; */
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.hero{
+    position: relative;
+}
+.carouselEffect{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(#0B0014,#0b001481,#0B0014);
+    z-index: 10;
+}
+ul li {
+    list-style: none;
+}
+
+.navItem{
+    padding: 0 50px;
+    padding-top: 80px;
+    transition: ease all .34s;
+}
+.navItem:hover{
+    color: #D44D5C;
+    cursor: pointer;
+}
+.rhombus{
+    padding-top: 86px;
+    width: 65%;
+}
+nav{
+    font-family: 'Philosopher', sans-serif;
+    color: #EEA05C;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.heroText{
+    font-family: 'Parisienne', cursive;
+    color: #EEA05C;
+    /* text-transform: capitalize; */
+    font-size: 10rem;
+    /* margin-top: 20vh; */
+    font-weight: 400;
+}
+.heroSubText{
+    font-family: 'Philosopher', sans-serif;
+    color: #D44D5C;
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 20px;
+}
+.myBtn{
+    cursor: pointer;
+    padding: 20px 40px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2rem;
+    color: #EEA05C;
+    background: #773344;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 5px #2a0f16;
+}
+.head1{
+    font-family: 'Parisienne', cursive;
+    font-size: 4rem;
+}
+.head2{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.goldFont{
+    color: #EEA05C;
+}
+.darkFont{
+    color: #0B0014;
+}
+.darkRedFont{
+    color: #773344;
+}
+.whiterFont{
+    color: #E3B5A4;
+}
+.lightBackgnd{
+    background-color: #F5E9E2;
+
+}
+.specialImg{
+    padding: 0;
+    width:100%;
+    min-height: 60vh; 
+    object-fit: cover;
+}
+.foodDesc{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+}
+.specialPrice{
+    font-family: 'Parisienne', cursive;
+    color: #D44D5C;
+    font-size: 2.8rem;
+    font-weight: 700;
+    
+}
+/* tabBar */
+.tabItem{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+    color: #773344;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: ease all .34s;
+    border-bottom: 3px solid  #d44d5d00;
+}
+.tabItemActive{
+    color: #D44D5C;
+    border-bottom: 3px solid  #D44D5C;
+}
+.tabItem:hover{
+    color: white;
+    background-color: #D44D5C;
+    }
+.menuItem {
+    padding-top: 10vh;
+}
+.menuItemImg{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.menuHead{
+    text-transform: capitalize;
+}
+/* animation test styles */
+.ml1 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+  
+  .ml1 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 0 0;
+  }
+  
+  .ml1 .line1 { top: 0; }
+  .ml1 .line2 { bottom: 0; }
+  /* animation test styles */
