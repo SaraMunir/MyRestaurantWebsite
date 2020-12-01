@@ -249,13 +249,14 @@ nav{
     top: 50px;
     right: -140px;
     z-index: 100;
-    box-shadow: 5px 5px 10px #2a0f16;
+    box-shadow: 5px 5px 10px #2a0f16a9;
 }
 .reviewCard{
     background-color: white;
     border-radius: 25px;
     padding: 30px;
     min-height: 40vh;
+    box-shadow: 5px 5px 10px #2a0f168c;
 }
 .reviewTxt{
     font-size: 1.5rem;
@@ -276,4 +277,24 @@ nav{
     right: 0;
     z-index: 1000;
     background-color: #2a0f16b6;
+}
+.reviews {
+    position: relative;
+}
+.myModal{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #773344;
+    z-index: 2000;
+}
+.crossBtn{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 20px;
+    cursor: pointer;
 }

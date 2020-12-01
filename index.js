@@ -57,3 +57,16 @@ function showMenu(category){
         $( "#DrinksTab" ).removeClass('tabItemActive');
     }
 }
+function showModal(){
+    $( "#modal1" ).fadeIn();
+}
+function closeModal(){
+    $( "#modal1" ).fadeOut();
+}
+function changeColor(type){
+    if(type === 'white'){
+        $( "#closeBtn" ).attr("src", "assets/restaurantSmallLogoWhite.png");
+    }else{
+        $( "#closeBtn" ).attr("src", "assets/restaurantSmallLogo.png");
+    }
+}
