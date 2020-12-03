@@ -63,10 +63,24 @@ function showModal(){
 function closeModal(){
     $( "#modal1" ).fadeOut();
 }
+function showMenu1(){
+    $( "#sideMenu" ).fadeIn();
+}
+function closeMenu(){
+    $( "#sideMenu" ).fadeOut();
+}
 function changeColor(type){
     if(type === 'white'){
-        $( "#closeBtn" ).attr("src", "assets/restaurantSmallLogoWhite.png");
+        $( "#spoon" ).attr("src", "assets/spoonPink.svg");
+        $( "#fork" ).attr("src", "assets/forkPink.svg");
     }else{
-        $( "#closeBtn" ).attr("src", "assets/restaurantSmallLogo.png");
+        $( "#spoon" ).attr("src", "assets/spoonGold.svg");
+        $( "#fork" ).attr("src", "assets/forkGold.svg");
+    }
+    if(type === 'menuBtn'){
+        $( ".closeMenuBtn" ).attr("src", "assets/crossBtnPink.svg");
+    }
+    if(type === 'menuBtnX'){
+        $( ".closeMenuBtn" ).attr("src", "assets/crossBtnGold.svg");
     }
 }

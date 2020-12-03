@@ -59,6 +59,7 @@ ul li {
 .navItem2{
     padding: 0 50px;
     /* padding-top: 80px; */
+    font-size: 1.7rem;
     transition: ease all .34s;
 }
 .navItem2:hover{
@@ -66,13 +67,28 @@ ul li {
     cursor: pointer;
 }
 .rhombus2{
-    width: 65%;
+    width: 5px;
 }
 nav{
     font-family: 'Philosopher', sans-serif;
     color: #EEA05C;
     text-transform: uppercase;
     font-size: 1.3rem;
+}
+.sideMenu{
+    position: absolute;
+    width: 350px;
+    background: #773344;
+    top: 0;
+    right: 0;
+    padding: 50px;
+    box-shadow: -5px 5px 5px #2a0f16;
+
+}
+.closeMenuBtn{
+    cursor: pointer;
+    /* width: 40px; */
+    padding-bottom: 20px;
 }
 .heroText{
     font-family: 'Parisienne', cursive;
@@ -145,7 +161,7 @@ nav{
 .cheffImg{
     padding: 0;
     width:100%;
-    min-height: 65vh; 
+    height: 60vh; 
     object-fit: cover;
 }
 .foodDesc{
@@ -271,12 +287,24 @@ nav{
 }
 .staticNav{
     /* height: 100vh; */
-    padding: 15px;
+    /* padding: 15px; */
     position: sticky;
     top: 0;
     right: 0;
     z-index: 1000;
-    background-color: #2a0f16b6;
+    /* background-color: #2a0f16b6; */
+}
+.hamburgerCnt{
+    width: 100px; 
+    background-color: #2a0f16b6; 
+    padding: 25px 20px;
+    cursor: pointer;
+}
+.hamburger{
+    transition:all 1s ease;
+}
+.hamburgerCnt:hover .hamburger{
+    transform: rotateZ(90deg) ;
 }
 .reviews {
     position: relative;
@@ -297,4 +325,73 @@ nav{
     object-fit: contain;
     margin: 20px;
     cursor: pointer;
+}
+/* .spoon{
+    position: relative;
+    animation-name: spoon;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+} */
+.closeAni{
+    /* height: 200px;  */
+    /* width: 50px; */
+    cursor: pointer;
+    padding: 10px;
+}
+.spoon, .fork{
+    position: relative;
+    height: 10vh; 
+    width: 4vh;
+    transition:all 1s ease;
+}
+.closeAni:hover .spoon{
+    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    transform: rotateZ(45deg) translateX(48%);
+
+}
+.closeAni:hover .fork{
+    -webkit-transform: rotateZ(-45deg);
+    -ms-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg) translateX(-58%);
+}
+/* .closeAni:hover .spoon{
+    position: relative;
+    animation-name: spoon;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.closeAni:hover .fork{
+    position: relative;
+    animation-name: fork;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+} */
+/* .closeAni:hover .spoon{
+    transform: rotate(45deg)
+} */
+@keyframes spoon {
+    from   {
+        -ms-transform: rotate(0deg); 
+        transform: rotate(0deg);
+        left: -0;
+
+    }
+    to{-ms-transform: rotate(45deg); 
+        transform: rotate(45deg);
+        left: 52px;
+    }
+}
+@keyframes fork {
+    from   {
+        -ms-transform: rotate(0deg); 
+        transform: rotate(0deg);
+        right: -0;
+
+    }
+    to{-ms-transform: rotate(-45deg); 
+        transform: rotate(-45deg);
+        right: 52px;
+    }
 }

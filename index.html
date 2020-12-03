@@ -72,16 +72,35 @@
         </div>
     </div>
     <div class="staticNavPar">
-        <nav class="staticNav"  data-aos="zoom-in-down">
-            <ul class="d-flex pl-0 text-center justify-content-center">
-                <li class="navItem2">home</li>
-                <li class=""><img class="rhombus2"src="assets/rhombus.png" alt="rhombus"></li>
-                <li class="navItem2">about</li>
-                <li class=""><img class="rhombus2"src="assets/rhombus.png" alt="rhombus"></li>
-                <li class="navItem2">menu</li>
-                <li class=""><img class="rhombus2" src="assets/rhombus.png" alt="rhombus"></li>
-                <li class="navItem2">contact</li>
-            </ul>
+        <nav class="staticNav" data-aos="zoom-in-down">
+            <div class="d-flex  justify-content-end">
+                <div class="position-relative">
+                    <div class="d-flex justify-content-end">
+                        <div class="hamburgerCnt">
+                            <img class="hamburger" src="assets/hamburgerLogoPink.svg" alt="" onclick="showMenu1()">
+                        </div>
+                    </div>
+                    <ul class="sideMenu text-center justify-content-center mx-auto hide" id="sideMenu">
+                        <li class="">
+                            <div class="d-flex justify-content-end">
+                            <!-- <img class="closeMenuBtn" src="assets/crossBtnGold.svg" alt=""  onmouseover="changeColor('menuBtn')" onmouseleave="changeColor('menuBtnX')"> -->
+                                <i class="fas fa-times closeMenuBtn" onclick="closeMenu()"></i>
+                            </div>
+                        </li>
+                        <li class="pt-2"><img src="assets/restaurantLogo.png" alt="logo"></li>
+                        <li class=" mx-auto"><img class="rhombus2"src="assets/rhombus.png" alt="rhombus"></li>
+                        <li class="navItem2 mx-auto">home</li>
+                        <li class=" mx-auto"><img class="rhombus2"src="assets/rhombus.png" alt="rhombus"></li>
+                        <li class="navItem2 mx-auto">about</li>
+                        <li class=" mx-auto"><img class="rhombus2"src="assets/rhombus.png" alt="rhombus"></li>
+                        <li class="navItem2 mx-auto">menu</li>
+                        <li class=" mx-auto"><img class="rhombus2" src="assets/rhombus.png" alt="rhombus"></li>
+                        <li class="navItem2 mx-auto">contact</li>
+                    </ul>
+
+                </div>
+
+            </div>
         </nav>
         <div class="specials fullHeight">
             <div class="wrapper" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -491,10 +510,10 @@
                             <div class="row  col-lg-11 mx-auto">
                                 <img class="customerImg" src="assets/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg" alt="customer review image">
                                 <div class="reviewCard col-lg-8 text-center">
-                                    <h3 class="header2 pinkFont reviewName">John Doe</h3>
                                     <div class="reviewTxt d-flex justify-content-end">
                                         <p class=" darkRedFont pr-3 col-lg-10 text-right"> <i class="fas fa-quote-left pinkFont"></i> &nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur cupiditate cum, accusamus inventore ut, eligendi vero sit hic ratione iure perspiciatis illo aut quo quos suscipit ipsa iusto? Vitae, quibusdam? &nbsp; <i class="fas fa-quote-right pinkFont"></i></p>
                                     </div>
+                                    <h3 class="header2 pinkFont reviewName text-right pr-3 pt-2">- &nbsp; John Doe</h3>
                                 </div>
                             </div>
                         </div>
@@ -502,10 +521,10 @@
                             <div class="row  col-lg-11 mx-auto">
                                 <img class="customerImg" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8d29tYW58ZW58MHx8MHw%3D&w=1000&q=80" alt="customer review image">
                                 <div class="reviewCard col-lg-8 text-center">
-                                    <h3 class="header2 pinkFont reviewName">Jane Doe</h3>
                                     <div class="reviewTxt d-flex justify-content-end">
                                         <p class=" darkRedFont pr-3 col-lg-10 text-right"> <i class="fas fa-quote-left pinkFont"></i> &nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur cupiditate cum, accusamus inventore ut, eligendi vero sit hic ratione iure perspiciatis illo aut quo quos suscipit ipsa iusto? Vitae, quibusdam? &nbsp;<i class="fas fa-quote-right pinkFont"></i></p>
                                     </div>
+                                    <h3 class="header2 pinkFont reviewName text-right pr-3 pt-2">- &nbsp; Jane Doe</h3>
                                 </div>
                             </div>
                         </div>
@@ -513,10 +532,10 @@
                             <div class="row col-lg-11  mx-auto">
                                 <img class="customerImg" src="https://media.istockphoto.com/photos/young-african-woman-smiling-at-sunset-picture-id969233490?k=6&m=969233490&s=612x612&w=0&h=3UW-GHQ2CksIelqKk0UKgy_7qExPsn1g8B2Q0zzU1xo=" alt="customer review image">
                                 <div class="reviewCard col-lg-8 text-center">
-                                    <h3 class="header2 pinkFont reviewName">Jinny Doe</h3>
                                     <div class="reviewTxt d-flex justify-content-end">
                                         <p class=" darkRedFont pr-3 col-lg-10 text-right"> <i class="fas fa-quote-left pinkFont"></i> &nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur cupiditate cum, accusamus inventore ut, eligendi vero sit hic ratione iure perspiciatis illo aut quo quos suscipit ipsa iusto? Vitae, quibusdam? &nbsp;<i class="fas fa-quote-right pinkFont"></i></p>
                                     </div>
+                                    <h3 class="header2 pinkFont reviewName text-right pr-3 pt-2">- &nbsp; Jane Doe </h3>
                                 </div>
                             </div>
                         </div>
@@ -534,7 +553,11 @@
             </div>
             <div class="myModal hide" id="modal1">
                 <div class="d-flex justify-content-end">
-                    <img class="crossBtn" src="assets/restaurantSmallLogo.png" alt="" id="closeBtn" onmouseover="changeColor('white')" onmouseleave="changeColor()" onclick="closeModal()">
+                    <!-- <img class="crossBtn" src="assets/restaurantSmallLogo.png" alt="" id="closeBtn" onmouseover="changeColor('white')" onmouseleave="changeColor()" onclick="closeModal()"> -->
+                    <div class="d-flex closeAni" onmouseover="changeColor('white')" onmouseleave="changeColor()" onclick="closeModal()">
+                        <img class="spoon" id="spoon" src="assets/spoonGold.svg" alt="">
+                        <img class="fork" id="fork" src="assets/forkGold.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
